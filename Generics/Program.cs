@@ -10,11 +10,20 @@ namespace Generics
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Finding maximum of three numbers");
-            MaxOfNumbers integer = new MaxOfNumbers();
-            int maximumNum = integer.MaxInteger(31, 21, 11);
-            Console.WriteLine("Maximum Number is :" + maximumNum);
-            Console.ReadLine();
+            Console.WriteLine("1.Maximum Integer");
+            Console.WriteLine("Enter the option");
+            int option = Convert.ToInt32(Console.ReadLine());
+            switch(option)
+            {
+                case 1:
+                    Console.WriteLine("Finding maximum of three numbers");
+                    MaxOfNumbers integer = new MaxOfNumbers();
+                    int maximumNum = integer.MaxInteger(31, 31, 81);
+                    Console.WriteLine("Maximum Number is :" + maximumNum);
+                    Console.ReadLine();
+                    break;
+            }
+            
         }
     }
 }
