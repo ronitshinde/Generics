@@ -10,8 +10,8 @@ namespace MaxIntGenericTest
         [Test]
         public void GivenMaxFirstNum_WhenAnalysed_ShouldReturnFirstMax()
         {
-            int result = intFindMax.FindMaximumGeneric(20, 10, 17);
-            Assert.AreEqual(20, result);
+            int result = intFindMax.FindMaximumGeneric(30, 20, 17);
+            Assert.AreEqual(30, result);
         }
     }
 }

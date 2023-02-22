@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Generics
 {
-    // icomparible is used to provide a default sort order for your obj(object).
+    // Icomparable is used to provide a default sort order for your obj(object).
    
     public class FindMaxGeneric<T> where T : IComparable //method is generic
     {

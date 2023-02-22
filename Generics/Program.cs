@@ -14,6 +14,7 @@ namespace Generics
             Console.WriteLine("1.Maximum Integer \n2.Maximum Float Number \n3.Maximum String");
             Console.WriteLine("Enter the option");
             int option = Convert.ToInt32(Console.ReadLine());
+
             switch (option)
             {
                 case 1:
