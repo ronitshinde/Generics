@@ -37,6 +37,12 @@ namespace MaxIntGenericTest
             float result = floatFindMax.FindMaximumGeneric(37.50f, 50.65f, 20.58f);
             Assert.AreEqual(50.65f, result);
         }
+        [Test]
+        public void GivenMaxThirdFloat_WhenAnalysed_ShouldReturnThirdMax()
+        {
+            float result = floatFindMax.FindMaximumGeneric(37.50f, 50.65f, 70.58f);
+            Assert.AreEqual(70.58f, result);
+        }
 
     }
 }
