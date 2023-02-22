@@ -25,5 +25,18 @@ namespace MaxIntGenericTest
             int result = intFindMax.FindMaximumGeneric(17, 10, 20);
             Assert.AreEqual(20, result);
         }
+        [Test]
+        public void GivenMaxFirstFloat_WhenAnalysed_ShouldReturnFirstMax()
+        {
+            float result = floatFindMax.FindMaximumGeneric(37.50f, 10.65f, 20.58f);
+            Assert.AreEqual(37.50f, result);
+        }
+        [Test]
+        public void GivenMaxSecondFloat_WhenAnalysed_ShouldReturnSecondMax()
+        {
+            float result = floatFindMax.FindMaximumGeneric(37.50f, 50.65f, 20.58f);
+            Assert.AreEqual(50.65f, result);
+        }
+
     }
 }
