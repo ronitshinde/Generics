@@ -19,5 +19,11 @@ namespace MaxIntGenericTest
             int result = intFindMax.FindMaximumGeneric(10, 20, 17);
             Assert.AreEqual(20, result);
         }
+        [Test]
+        public void GivenMaxThirdNum_WhenAnalysed_ShouldReturnThirdMax()
+        {
+            int result = intFindMax.FindMaximumGeneric(17, 10, 20);
+            Assert.AreEqual(20, result);
+        }
     }
 }
