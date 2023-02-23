@@ -43,6 +43,12 @@ namespace MaxIntGenericTest
             float result = floatFindMax.FindMaximumGeneric(37.50f, 50.65f, 70.58f);
             Assert.AreEqual(70.58f, result);
         }
+        [Test]
+        public void GivenMaxFirstString_WhenAnalysed_ShouldReturnFirstMax()
+        {
+            string result = stringFindMax.FindMaximumGeneric("Peach", "Apple", "Banana");
+            Assert.AreEqual("Peach", result);
+        }
 
     }
 }
